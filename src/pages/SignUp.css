@@ -1,0 +1,480 @@
+.auth-container {
+    background: url("/public/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* ------------- تنسيق عام للصفحة ------------- */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Changed from height to min-height */
+    padding: 20px;  /* Added padding */
+    background-color: #f4f4f4;
+}
+  
+.form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 500px;  /* Reduced from 600px */
+  max-height: 90vh;  /* Added max-height */
+  overflow-y: auto;  /* Added scroll if content is too long */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+  
+  /* ------------- عنوان الخطوات ------------- */
+  .form-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* ------------- تنسيق الـ Inputs ------------- */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* ------------- زرار التنقل بين الخطوات ------------- */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-secondary {
+    background-color: #007bff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #007bff;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ------------- Step 1 - معلومات المستخدم ------------- */
+  .gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .gender-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  
+  
+  /* عنوان الخطوة */
+  .form-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* تنسيق الحقول */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    /*الحوافالدائرية*/font-size: 16px;
+    outline: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+  
+  .input-field:focus {
+    border-color: #a855f7; /* لون بنفسجي عند التركيز */
+    box-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
+  }
+  
+  /* تنسيق المجموعات مثل الـ Age */
+  .flex-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .flex-group select {
+    flex: 1;
+  }
+  
+  /* تنسيق الراديو جروب */
+  .gender-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  /* تنسيق زرار Continue */
+  .btn-btn-primary {
+    background-color: #a855f7; /* لون بنفسجي */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px; /* الحواف الدائرية */
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-btn-primary:hover {
+    background-color: #9333ea; /* لون أغمق عند التحويم */
+  }
+  
+  /* تنسيق رسالة الخطأ */
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* تنسيق اللينك الخاص بتسجيل الدخول */
+  .text-center {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-link {
+    color: #a855f7;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* ------------- Step 2 - بيانات الطوارئ ------------- */
+  .emergency-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+  
+  
+  /* عنوان الفورم */
+  .form-title {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* تنسيق الحقول (Inputs) */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    /*جعلالحوافدائرية*/font-size: 16px;
+    transition: 0.3s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+  
+  /* تأثير عند تركيز المستخدم على الحقل */
+  .input-field:focus {
+    border-color: #800080; /* بنفسجي */
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+  }
+  
+  /* تنسيق زرار Continue و Previous */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .btn {
+    width: 48%;
+    padding: 12px;
+    background-color: #800080; /* بنفسجي */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px; /* حواف دائرية */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+  }
+  
+  /* زرار Previous يكون بنفسجي */
+  .btn-secondary {
+    background-color: #800080;
+  }
+  
+  /* تأثير Hover على الأزرار */
+  .btn:hover {
+    background-color: #660066; /* درجة أغمق من البنفسجي */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #660066;
+  }
+  
+  /* تنسيق الرسالة الخطأ للباسورد */
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* تنسيق الجندر */
+  .gender-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  /* تنسيق رابط "Already have an account?" */
+  .text-center {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .login-link {
+    color: #800080;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* ------------- Step 3 - الأمراض الشائعة ------------- */
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 45%;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+  }
+  .login-link {
+    cursor: pointer;
+  }
+  
+  
+  /* ✅ تكبير الصندوق الرئيسي */
+  .form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    max-width: 90%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  
+  /* ✅ تنسيق العنوان Step 3/3 */
+  .step-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  /* ✅ تنسيق عنوان الفورم */
+  .form-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* ✅ تنسيق النصوص */
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* ✅ تنسيق مجموعة الـ checkboxes */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* زيادة المسافة بين العناصر */
+    margin-top: 10px;
+  }
+  
+  /* ✅ تنسيق كل checkbox */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .checkbox-label input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* ✅ تنسيق مربع النص */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* ✅ تصحيح حجم زرارين Step3 */
+  .step3-buttons {
+    display: flex;
+    justify-content: center; /* توسيط الأزرار */
+    gap: 15px; /* مسافة بين الزرارين */
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .step3-buttons .btn {
+    flex: 1; /* يجعل الزرارين بنفس الحجم */
+    max-width: 180px; /* تحديد عرض متساوي */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  /* لون زرار Previous في Step3 */
+  .step3-buttons .btn-secondary {
+    background-color:#660066;
+    color: rgb(255, 255, 255);
+  }
+  
+  .step3-buttons .btn-secondary:hover {
+    background-color:#800080;
+  }
+  
+  /* لون زرار Submit في Step3 */
+  .step3-buttons .btn-primary {
+    background-color: #660066;
+    color: white;
+  }
+  
+  .step3-buttons .btn-primary:hover {
+    background-color: #800080;
+  }
+  /* ✅ إضافة خلفية لصفحة الـ SignUp */
+  .signup-container {
+    background-image: url("/public/background.jpg"); /* استبدلي "your-image.jpg" برابط الصورة */
+    background-size: cover; /* تغطية الشاشة بالكامل */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* تجعل الصفحة تأخذ الارتفاع بالكامل */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .password-input-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .input-field {
+    padding-right: 40px;
+    width: 100%;
+  }
+
+  

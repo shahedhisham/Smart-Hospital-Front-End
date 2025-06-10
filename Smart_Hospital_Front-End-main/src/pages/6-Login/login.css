@@ -1,0 +1,193 @@
+.login-auth-container {
+  background: url("/public/background.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 230px; /* Added to push content down */
+  padding-bottom: 20px; /* Added for bottom spacing */
+  box-sizing: border-box;
+}
+
+.login-main-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center to flex-start */
+}
+
+/* Login Form Box */
+.login-form-box {
+  background: #fff;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(7, 2, 2, 0.1);
+  width: 100%;
+  margin-left: -50px; /* Adjusted left margin for mobile */
+  max-width: 500px;
+  text-align: center;
+  margin-top: 40px; /* Added to push the form down further */
+}
+
+/* Rest of your existing CSS remains exactly the same */
+.login-form-title {
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-align: center;
+  font-size: 28px;
+}
+
+.login-input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-input-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.login-input-field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #a855f7;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.login-input-field:focus {
+  outline: none;
+  border-color: #7e22ce;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.3);
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.login-password-toggle{
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Error Message */
+.login-error-message {
+  color: #ef4444;
+  background: #fee2e2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Forgot Password */
+.login-forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.login-forgot-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #660066;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-submit-btn:hover {
+  background: #800080;
+}
+
+/* Sign Up Option */
+.login-signup-option {
+  margin-top: 15px;
+}
+
+.login-signup-text {
+  color: #555;
+}
+
+.login-signup-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-signup-link:hover {
+  text-decoration: underline;
+}
+
+.login-test-credentials {
+  margin-top: 30px;
+  padding: 15px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.login-test-credentials h4 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.login-test-credentials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.login-test-credentials li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  color: #4b5563;
+}
+
+.login-test-credentials strong {
+  color: #6b21a8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-auth-container {
+      padding-top: 60px; /* Adjusted for mobile */
+  }
+  .login-form-box {
+      margin-top: 20px; /* Adjusted for mobile */
+      padding: 40px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-auth-container {
+      padding-top: 40px; /* Adjusted for small mobile */
+  }
+  .login-form-box {
+      margin-top: 10px; /* Adjusted for small mobile */
+      padding: 30px 20px;
+  }
+}

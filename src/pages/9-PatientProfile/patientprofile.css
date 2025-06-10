@@ -1,0 +1,1140 @@
+
+/* Base Container Styles */
+.profile-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Icon Styles */
+.sidebar-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* Makes icons white in sidebar */
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 330px;
+    background-color: #1e2b5b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ /* Sidebar Item Styles */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  .sidebar-item:first-child {
+    margin-top: 200px;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #2f3a6c;
+  }
+  
+  .sidebar-logout {
+    margin-top: auto;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar-logout:hover {
+    background-color: #2f3a6c;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f3f3f3;
+  }
+  
+  /* Profile Content Styles */
+  .profile-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* Fixed width */
+    margin: 0 auto; /* Center it horizontally */
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+    margin-top: -30px; /* Negative margin to pull image up further */
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+    color: #1e2b5b;
+    font-size: 1.8rem;
+  }
+  
+  .profile-title {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  /* Box Styles */
+  .rating-box,
+  .contact-box,
+  .details-box {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contact-box h3,
+  .details-box h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1e2b5b;
+    font-size: 1.4rem;
+  }
+  
+  .rating-box {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .contact-box p {
+    margin: 0.8rem 0;
+  }
+  
+  .details-box p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+  /* Excuse Request Styles */
+.excuse-container {
+    background-color: #f3f3f3;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .excuse-title {
+    color: #1e2b5b;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .excuse-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .excuse-section {
+    margin-bottom: 2rem;
+  }
+  
+  .excuse-section-title {
+    color: #1e2b5b;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #1e2b5b;
+    padding-bottom: 0.5rem;
+  }
+  
+  .excuse-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .excuse-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .excuse-row .excuse-group {
+    flex: 1;
+  }
+  
+  .excuse-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .excuse-input,
+  .excuse-select,
+  .excuse-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .excuse-input:focus,
+  .excuse-select:focus,
+  .excuse-textarea:focus {
+    outline: none;
+    border-color: #1e2b5b;
+    box-shadow: 0 0 0 2px rgba(30, 43, 91, 0.2);
+  }
+  
+  .excuse-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .excuse-search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .excuse-search {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .excuse-file-input {
+    margin-top: 0.5rem;
+  }
+  
+  .excuse-actions {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .excuse-submit-btn {
+    background-color: #1e2b5b;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .excuse-submit-btn:hover {
+    background-color: #2f3a6c;
+  }
+  .profile-image-container {
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #1e2b5b;
+  object-fit: cover;
+}
+
+.profile-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(30, 43, 91, 0.7);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.profile-image-container:hover .profile-image-overlay {
+  opacity: 1;
+}
+/* Edit Mode Styles */
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .edit-btn, .save-btn {
+    background-color: #1e2b5b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-btn:hover, .save-btn:hover {
+    background-color: #2f3a6c;
+  }
+  
+  .editable-field {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+    gap: 10px;
+  }
+  
+  .edit-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .edit-input:focus {
+    outline: none;
+    border-color: #1e2b5b;
+    box-shadow: 0 0 0 2px rgba(30, 43, 91, 0.2);
+  }
+  
+  /* Responsive Adjustments */
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    /* Adjustments for medium screens */
+    .profile-content {
+      width: 800px;
+    }
+    
+    .sidebar {
+      width: 300px;
+    }
+    
+    .sidebar-item:first-child {
+      margin-top: 150px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* Tablet-sized screens */
+    .profile-container {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+      position: relative;
+    }
+    
+    .sidebar-item {
+      margin-top: 0;
+      font-size: 16px;
+      padding: 0.75rem;
+      flex: 1 0 45%;
+      margin: 5px;
+    }
+    
+    .sidebar-item:first-child {
+      margin-top: 0;
+    }
+    
+    .sidebar-logout {
+      position: relative;
+      margin-top: 0;
+      flex: 1 0 100%;
+      justify-content: center;
+    }
+    
+    .profile-content {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    
+    .main-content {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile adjustments */
+    .profile-content {
+      padding: 1.5rem;
+    }
+    
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    
+    .sidebar-item {
+      flex: 1 0 100%;
+      margin: 2px 0;
+    }
+    
+    .excuse-form {
+      padding: 1.5rem;
+    }
+    
+    .excuse-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Small mobile devices */
+    .profile-content,
+    .excuse-form {
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    
+    .profile-header h2 {
+      font-size: 1.5rem;
+    }
+    
+    .profile-title {
+      font-size: 1rem;
+    }
+    
+    .sidebar-icon {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .contact-box h3,
+    .details-box h3 {
+      font-size: 1.2rem;
+    }
+  }
+  .previous-appointments-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .appointments-header h1 {
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tabs button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .tabs button.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .appointment-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .appointment-card.expanded {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .appointment-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  
+  .appointment-date {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+  }
+  
+  .appointment-date .date {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .appointment-date .time {
+    color: #7f8c8d;
+    font-size: 0.9em;
+  }
+  
+  .appointment-info {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
+  
+  .appointment-info h3 {
+    margin: 0;
+    color: #3498db;
+    font-size: 1.1em;
+  }
+  
+  .appointment-info p {
+    margin: 5px 0 0;
+    color: #7f8c8d;
+    font-size: 0.9em;
+  }
+  
+  .rating-badge {
+    margin-top: 5px;
+  }
+  
+  .toggle-details-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-details-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .appointment-details {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    background-color: #f9f9f9;
+  }
+  
+  .details-section {
+    margin-bottom: 15px;
+  }
+  
+  .details-section h4 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+  }
+  
+  .details-section p {
+    margin: 0;
+    color: #34495e;
+    line-height: 1.5;
+  }
+  
+  .feedback-form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #ddd;
+  }
+  
+  .feedback-form h4 {
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+  }
+  
+  .rating-input {
+    margin-bottom: 15px;
+  }
+  
+  .rating-input p {
+    margin: 0 0 10px 0;
+    color: #7f8c8d;
+  }
+  
+  .stars-container {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .stars-container span {
+    font-size: 24px;
+    transition: color 0.2s;
+  }
+  
+  .feedback-input {
+    margin-bottom: 15px;
+  }
+  
+  .feedback-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #7f8c8d;
+  }
+  
+  .feedback-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+  }
+  
+  .submit-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #219653;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .submitted-feedback {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #ddd;
+  }
+  
+  .submitted-feedback h4 {
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+  }
+  
+  .your-rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .submission-date {
+    color: #7f8c8d;
+    font-size: 0.9em;
+  }
+  
+  .your-feedback h5 {
+    margin: 0 0 5px 0;
+    color: #7f8c8d;
+  }
+  
+  .your-feedback p {
+    margin: 0;
+    color: #34495e;
+    line-height: 1.5;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #3498db;
+  }
+  
+  .no-appointments {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* تنسيقات الصفحة الرئيسية */
+.previous-appointments-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .appointments-header h1 {
+    color: #2c3e50;
+    font-size: 28px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tabs button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+  
+  .tabs button.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .no-appointments {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+    font-size: 18px;
+  }
+  
+  /* تنسيقات بطاقة الموعد */
+  .appointment-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .appointment-card.expanded {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .appointment-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  
+  .appointment-date {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+  }
+  
+  .appointment-date .date {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2c3e50;
+  }
+  
+  .appointment-date .time {
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  .appointment-info {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .appointment-info h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 18px;
+  }
+  
+  .appointment-info p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  .rating-badge {
+    margin-top: 5px;
+  }
+  
+  .toggle-details-btn {
+    background-color: transparent;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+  
+  .toggle-details-btn:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* تنسيقات تفاصيل الموعد */
+  .appointment-details {
+    padding: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .details-section {
+    margin-bottom: 15px;
+  }
+  
+  .details-section h4 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+    font-size: 16px;
+  }
+  
+  .details-section p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  /* تنسيقات التقييم */
+  .rate-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .rate-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .submitted-feedback {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+  }
+  
+  .submitted-feedback h4 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .your-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submission-date {
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  .your-feedback h5 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+  }
+  
+  .your-feedback p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* تنسيقات نموذج التقييم */
+  .rating-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .rating-modal {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .rating-modal h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .rating-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .feedback-section {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  .feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+    font-size: 14px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .modal-actions button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+  
+  .cancel-btn {
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* تنسيقات النجوم */
+  .stars-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .stars-container span {
+    transition: color 0.2s;
+  }
+  /* Status Section Styles */
+.status-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.status-title {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.no-requests {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.excuse-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.excuse-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+}
+
+.excuse-card.approved {
+  border-left-color: #2ecc71;
+}
+
+.excuse-card.pending {
+  border-left-color: #f39c12;
+}
+
+.excuse-card.rejected {
+  border-left-color: #e74c3c;
+}
+
+.excuse-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.excuse-card-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.approved {
+  background-color: #d5f5e3;
+  color: #27ae60;
+}
+
+.status-badge.pending {
+  background-color: #fef5e7;
+  color: #f39c12;
+}
+
+.status-badge.rejected {
+  background-color: #fadbd8;
+  color: #e74c3c;
+}
+
+.excuse-card-details {
+  margin-bottom: 10px;
+}
+
+.excuse-card-details p {
+  margin: 5px 0;
+  color: #34495e;
+}
+
+.excuse-approved-message {
+  background-color: #e8f8f5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.download-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #27ae60;
+}
